@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --blue: hsl(223, 87%, 63%);
 
@@ -25,23 +31,72 @@
   padding: 0 200px;
 }
 
+.mainHeading{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.heading1{
+  margin-bottom: 30px
+}
+
+.dotInHeading{
+  color: var(--blue);
+}
+
+.text1{
+  color:var(--gray);
+}
+
+.text2{
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.inputRow{
+  margin-bottom: 2rem;
+}
+
 .inputBox{
   text-align: right;
+  padding: 10px;
+  height: 60px;
+}
+
+.inputBox input{
+  border-radius: 20px;
+  color: black;
+}
+
+.invalidEmailStyle{
+  border: 1px solid red;
+}
+
+.form-text{
+  text-align: left;
+  color: var(--light-red) !important;
 }
 
 .notifyBtn{
   text-align: left;
+  padding: 10px;
+  height: 60px;
+}
+
+.notifyBtn button{
+  border-radius: 20px;
+  width: 80%;
 }
 
 .dashboardImgStyle{
-  width: 100%;
+  width: 85%;
   height: 50vh;
 }
 
 .socialMediaIcons > div{
   padding:10px;
-  border-radius: 50%;
-  margin-right: 20px;
+  border-radius: 60%;
+  margin-right: 30px;
 }
 
 .socialMediaIcons > div:hover{
@@ -59,7 +114,6 @@
 .instagramIcon{
   color: var(--light-red);
 }
-
 
 .facebookIcon:hover{
   background-color: var(--blue);
@@ -81,12 +135,29 @@
     padding: 0 !important;
   }
 
-  .inputBox{
-    text-align: center !important; 
+  .dashboardImgStyle{
+    height: 35vh !important;
+  }
+
+  .inputRow{
+    margin-bottom: 2rem;
+  }
+
+  .inputBox .form-group{
+    padding-left: 2.5rem;
+  }
+
+  .inputBox input{
+    text-align: center;
+    width: 90% !important;
   }
 
   .notifyBtn{
     text-align: center !important;
+  }
+
+  .socialMediaIconRow{
+    margin-top: 3rem;
   }
 }
 
